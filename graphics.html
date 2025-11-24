@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Stats | Nevan Wantojo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="social.html">Social Media</a></li>
+                <li><a href="graphics.html" class="highlight">Skill Stats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 style="text-align: center; color: #ffffff;">Technical Proficiency</h1>
+        <p style="text-align: center; margin-bottom: 30px; color: #dcedf4;">
+            Visualizing proficiency using <strong>SVG (Scalar Vector Graphics)</strong>.
+        </p>
+
+        <!-- SVG SKILL CHART -->
+        <div style="display: flex; justify-content: center;">
+            <!-- Background is transparent/darker red to blend in -->
+            <svg width="500" height="300" viewBox="0 0 500 300" style="background: rgba(0,0,0,0.1); border-radius: 10px; padding: 20px; border: 2px solid #dcedf4;">
+                
+                <!-- Chart Title -->
+                <text x="50%" y="30" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold">Programming Skills</text>
+
+                <!-- Bar 1: C Programming - White -->
+                <text x="20" y="80" fill="#ffffff" font-family="Arial" font-size="14">C / C++</text>
+                <rect x="120" y="65" width="0" height="20" fill="#ffffff" rx="5">
+                    <animate attributeName="width" from="0" to="300" dur="1.5s" fill="freeze" />
+                </rect>
+                <text x="430" y="80" fill="#ffffff" font-size="12" font-weight="bold">90%</text>
+
+                <!-- Bar 2: Python - Light Blue -->
+                <text x="20" y="130" fill="#ffffff" font-family="Arial" font-size="14">Python</text>
+                <rect x="120" y="115" width="0" height="20" fill="#dcedf4" rx="5">
+                    <animate attributeName="width" from="0" to="260" dur="1.5s" begin="0.3s" fill="freeze" />
+                </rect>
+                <text x="390" y="130" fill="#dcedf4" font-size="12" font-weight="bold">80%</text>
+
+                <!-- Bar 3: Web Dev - Slightly darker blue or white -->
+                <text x="20" y="180" fill="#ffffff" font-family="Arial" font-size="14">HTML / CSS</text>
+                <rect x="120" y="165" width="0" height="20" fill="#ffffff" rx="5" opacity="0.8">
+                    <animate attributeName="width" from="0" to="280" dur="1.5s" begin="0.6s" fill="freeze" />
+                </rect>
+                <text x="410" y="180" fill="#ffffff" font-size="12" font-weight="bold">85%</text>
+
+                <!-- Bar 4: Teamwork - Blue -->
+                <text x="20" y="230" fill="#ffffff" font-family="Arial" font-size="14">Teamwork</text>
+                <rect x="120" y="215" width="0" height="20" fill="#dcedf4" rx="5" opacity="0.8">
+                    <animate attributeName="width" from="0" to="320" dur="1.5s" begin="0.9s" fill="freeze" />
+                </rect>
+                <text x="450" y="230" fill="#dcedf4" font-size="12" font-weight="bold">95%</text>
+
+                <!-- Axis Line -->
+                <line x1="120" y1="50" x2="120" y2="250" stroke="#ffffff" stroke-width="2" />
+            </svg>
+        </div>
+        
+        <p style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #dcedf4;">
+            *Interactive SVG Chart
+        </p>
+
+    </main>
+
+    <footer>
+        <p>Created by Nevan Wantojo &copy; 2025</p>
+    </footer>
+</body>
+</html>
